@@ -59,12 +59,12 @@ class Form extends Component {
 
           <ToppingForm
             toppings={ this.state.toppings }
-            handleOnChange={ this.handleChange }
+            handleOnChange={(e) => this.handleChange(e) }
           />
 
           <SideForm
             sides={ this.state.sides }
-            handleOnChange={ this.handleChange }
+            handleOnChange={ (e) => this.handleChange(e) }
           />
 
           <br />
